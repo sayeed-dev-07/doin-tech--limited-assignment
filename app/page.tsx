@@ -8,6 +8,7 @@ import Navbar from '@/components/shared/Navbar';
 import React from 'react';
 import CreatorSection from '@/sections/CreatorSection';
 import TestimonialsSection from '@/sections/TestimonialsSection';
+import Footer from '@/sections/Footer';
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
       <ProfessionalPathSection />
       <CreatorSection />
       <TestimonialsSection />
+      <Footer />
     </div>
   );
 };
