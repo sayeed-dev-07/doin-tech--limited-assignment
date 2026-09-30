@@ -62,7 +62,7 @@ export default function DiscoverSection() {
     return (
         <section
             ref={containerRef}
-            className="flex flex-col items-center justify-center px-6 py-20 bg-foreground"
+            className="flex flex-col mx-auto max-w-[1200px] px-4 md:px-6 items-center justify-center py-20 bg-foreground"
         >
             <div className="max-w-4xl font-poppins text-center mb-10">
                 <h1 className="animate-title text-4xl md:text-5xl font-semibold text-background mb-4 tracking-tight leading-tight">

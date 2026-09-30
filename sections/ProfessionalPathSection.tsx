@@ -65,10 +65,25 @@ export default function ProfessionalPathSection() {
     }, { scope: sectionRef });
 
     return (
-        <section ref={sectionRef} className="w-full bg-[#FAFAFA] relative isolate overflow-hidden py-24 px-6">
+        <section ref={sectionRef} className="w-full relative bg-[#FAFAFA] isolate overflow-hidden xl:py-24  px-6 h-full">
+
+            <div className='absolute xl:block hidden top-0  left-0 w-full h-full z-20'>
+                <div className='w-[700px] aspect-square absolute top-0 left-0'>
+                    <Image src={'/images/path/bg1.svg'} alt='bgSvg' fill className='object-contain' />
+                </div>
+                <div className='w-[700px] aspect-square absolute bottom-[-5%] left-[-10%]'>
+                    <Image src={'/images/path/path4.svg'} alt='bgSvg' fill className='object-contain' />
+                </div>
+                <div className='w-[700px] aspect-square absolute top-[30%] left-[-15%]'>
+                    <Image src={'/images/path/path2.svg'} alt='bgSvg' fill className='object-contain' />
+                </div>
+                <div className='w-[700px] aspect-square absolute right-0 -bottom-10'>
+                    <Image src={'/images/path/path3.svg'} alt='bgSvg' fill className='object-contain' />
+                </div>
+            </div>
 
 
-            <div className="max-w-[1258px] mx-auto flex flex-col gap-20">
+            <div className="max-w-[1200px] py-[120px] relative z-50 px-4 md:px-6 mx-auto flex flex-col gap-20">
 
 
                 <div className="row-1-trigger flex flex-col lg:flex-row items-center gap-10 lg:gap-20">

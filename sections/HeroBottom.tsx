@@ -30,7 +30,7 @@ const logos = [
 
 const HeroBottom = () => {
     return (
-        <div className='flex justify-center flex-wrap items-center gap-8 lg:gap-[72px] py-8 md:py-12 bg-[#F5F5F6]'>
+        <div className='flex  justify-center flex-wrap items-center gap-8 lg:gap-[72px] py-8 md:py-12 bg-[#F5F5F6]'>
             {logos.map((logo) => (
                 <Image key={logo.id} id={logo.id.toString()} src={logo.link} alt={logo.alt} width={170} height={42} />
             ))}

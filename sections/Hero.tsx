@@ -4,10 +4,10 @@ import React, { useRef } from 'react';
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import BackgroundShapes from './heroMini/BackgroundShapes';
-import HeroText from './heroMini/Herotext';
-import SearchBar from './heroMini/Searchbar';
-import HeroGraphics from './heroMini/HeroGraphics';
+import BackgroundShapes from '../components/heroMini/BackgroundShapes';
+import HeroText from '../components/heroMini/Herotext';
+import SearchBar from '../components/heroMini/Searchbar';
+import HeroGraphics from '../components/heroMini/HeroGraphics';
 
 
 const Hero = () => {

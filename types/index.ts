@@ -11,3 +11,10 @@ export interface Course {
     students: number;
     imgSrc: string;
 }
+export interface TestimonialData {
+    id: number;
+    name: string;
+    role: string;
+    quote: string;
+    imgSrc: string;
+}
