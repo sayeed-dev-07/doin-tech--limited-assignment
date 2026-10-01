@@ -5,11 +5,11 @@ import React, { useRef } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { TestimonialData } from '@/types';
+import { TestimonialCardProps } from '@/types';
 
 
 
-export default function TestimonialCard({ data }: { data: TestimonialData }) {
+export default function TestimonialCard({ data }: TestimonialCardProps) {
 
 
     return (

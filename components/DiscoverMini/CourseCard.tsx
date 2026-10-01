@@ -7,11 +7,7 @@ import Link from 'next/link';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Star, BarChart, BookOpen, Clock, MessageCircle } from 'lucide-react';
-import { Course } from '@/types';
-
-interface CourseCardProps {
-    course: Course;
-}
+import { CourseCardProps } from '@/types';
 
 export default function CourseCard({ course }: CourseCardProps) {
     const cardRef = useRef<HTMLAnchorElement>(null);

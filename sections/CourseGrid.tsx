@@ -31,7 +31,7 @@ export default function CourseGrid() {
     }, { scope: containerRef });
 
     return (
-        <section className="w-full bg-foreground py-16 px-4  md:px-6">
+        <section className="w-full bg-foreground px-4 py-12 sm:py-16 md:px-6">
             <div className="flex items-center justify-center w-full">
                 <div
                     ref={containerRef}
@@ -43,9 +43,9 @@ export default function CourseGrid() {
                 </div>
             </div>
             <div className='max-w-[1200px] mx-auto'>
-                <div className='flex flex-col items-center justify-center gap-4 my-16 '>
-                    <p className='font-poppins text-[36px] text-[#040819] font-semibold text-center'>Explore Diverse Learning Paths at Bytespace</p>
-                    <p className='max-w-[920px] text-center text-[#82868E] text-[18px]'>
+                <div className='my-12 flex flex-col items-center justify-center gap-4 sm:my-16'>
+                    <p className='font-poppins text-3xl font-semibold text-center text-[#040819] sm:text-[36px]'>Explore Diverse Learning Paths at Bytespace</p>
+                    <p className='max-w-[920px] text-center text-base text-[#82868E] sm:text-[18px]'>
                         At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there&apos;s something for everyone. Unleash your potential and explore our carefully curated categories.
                     </p>
                 </div>
@@ -53,9 +53,9 @@ export default function CourseGrid() {
                 <div className='flex flex-wrap gap-[10px] sm:gap-[20px] items-center justify-center '>
                     {
                         logoData.map((logo) => (
-                            <div className='flex flex-col border border-[#CED0D3] rounded-[24px] w-[140px] sm:w-[167px] aspect-square items-center justify-center' key={`L${logo.id}`}>
+                            <div className='flex w-[140px] aspect-square flex-col items-center justify-center rounded-[20px] border border-[#CED0D3] sm:w-[167px] sm:rounded-[24px]' key={`L${logo.id}`}>
                                 <Image src={logo.link} alt={logo.alt} className='inline-block mx-4 my-2' width={60} height={60} />
-                                <p className='text-[#242528] text-[20px] font-medium'>
+                                <p className='text-[16px] font-medium text-[#242528] sm:text-[20px]'>
                                     {logo.text}
                                 </p>
                             </div>

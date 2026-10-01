@@ -137,8 +137,8 @@ const Navbar: React.FC = () => {
                 </ul>
 
                 <div className="hidden md:flex items-center gap-6 text-sm lg:text-base font-medium z-50">
-                    <Link href="/signin" className="hover:opacity-80 transition-opacity">Sign In</Link>
-                    <Link href="/join" className="hover:opacity-80 transition-opacity">Join Us</Link>
+                    <Link href="/login" className="hover:opacity-80 transition-opacity">Sign In</Link>
+                    <Link href="/register" className="hover:opacity-80 transition-opacity">Join Us</Link>
                     <button aria-label="Cart" className="hover:opacity-80 transition-opacity">
                         <ShoppingBag size={20} strokeWidth={2} />
                     </button>
@@ -174,7 +174,7 @@ const Navbar: React.FC = () => {
                         </Link>
                     );
                 })}
-                <Link href="/signin" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-semibold text-white mt-4 border border-white px-8 py-3 rounded-full hover:bg-white hover:text-[#0038E2] transition-colors">Sign In</Link>
+                <Link href="/login" onClick={() => setMobileMenuOpen(false)} className="text-2xl font-semibold text-white mt-4 border border-white px-8 py-3 rounded-full hover:bg-white hover:text-[#0038E2] transition-colors">Sign In</Link>
             </div>
         </nav>
     );

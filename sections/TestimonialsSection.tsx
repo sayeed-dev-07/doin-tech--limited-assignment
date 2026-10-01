@@ -44,7 +44,7 @@ export default function TestimonialsSection() {
     return (
         <section
             ref={sectionRef}
-            className="w-full bg-[#FAFAFA] relative isolate py-24 px-6 overflow-hidden"
+            className="relative isolate w-full overflow-hidden bg-[#FAFAFA] px-4 py-16 sm:px-6 sm:py-24"
         >
             {/* Background Glows Container */}
             <div className="absolute inset-0 z-0 pointer-events-none">
@@ -83,14 +83,14 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Main Content */}
-            <div className="max-w-[1200px] mx-auto relative z-10 flex flex-col gap-[72px]">
+            <div className="relative z-10 mx-auto flex max-w-[1200px] flex-col gap-12 sm:gap-[72px]">
 
                 {/* Header Row */}
                 <div className="testi-header flex flex-col lg:flex-row items-end gap-10 lg:gap-[43px] w-full">
-                    <h2 className="flex-1 font-poppins font-semibold text-[44px] leading-[1.2] tracking-tight text-background w-full lg:max-w-[577px]">
+                    <h2 className="w-full flex-1 font-poppins text-3xl font-semibold leading-[1.2] tracking-tight text-background sm:text-[44px] lg:max-w-[577px]">
                         Discover What Our Community Is Saying
                     </h2>
-                    <p className="flex-1 text-[18px] leading-[1.6] text-[#4F4F4F] w-full lg:max-w-[580px]">
+                    <p className="w-full flex-1 text-base leading-[1.6] text-[#4F4F4F] sm:text-[18px] lg:max-w-[580px]">
                         At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.
                     </p>
                 </div>
